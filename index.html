@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Pixel Gladiators - Trivia Battle</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Pixel Gladiators - Trivia Battle</h1>
+
+    <div id="gameArea">
+        <div class="player" id="player1">
+            <p>🛡 Player 1: <span id="p1Health">3</span> ❤</p>
+        </div>
+        <div class="player" id="player2">
+            <p>⚔ Player 2: <span id="p2Health">3</span> ❤</p>
+        </div>
+    </div>
+
+    <div id="questionBox">
+        <p id="questionText">Loading question...</p>
+        <input type="text" id="answerInput" placeholder="Type your answer...">
+        <button onclick="checkAnswer()">Submit</button>
+    </div>
+
+    <p id="roundInfo">Round <span id="roundNum">1</span></p>
+    <button id="nextQuestion" onclick="nextRound()">Next Round</button>
+
+    <h2>Leaderboard</h2>
+    <ul id="leaderboard"></ul>
+
+    <button id="toggleMode">🌙 Toggle Night Mode</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
